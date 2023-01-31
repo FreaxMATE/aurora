@@ -49,7 +49,7 @@ class Aurora:
         t = [datetime.combine(date(2021, 11, 1), self.starttime) + timedelta(minutes=i) for i in timerange]
         print(t)
         fig, axes = plt.subplots()
-        plt.title('Aurora sightings in November 2021')
+        plt.title('Aurora occurrences in November 2021')
         axes.plot(t, self.n_green_pixels, color='tab:green', lw=1)
         xformatter = mdates.DateFormatter('%H:%M')
         Axis.set_major_formatter(axes.xaxis, xformatter)
@@ -68,4 +68,5 @@ class Aurora:
 
 if __name__=="__main__":
     aurora = Aurora(sys.argv[1])
+
 
