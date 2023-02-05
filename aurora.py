@@ -12,8 +12,8 @@ from matplotlib.axis import Axis
 
 class Aurora:
 
-    starttime = time(14, 0)
-    endtime = time(7, 40)
+    starttime = time(15, 0)
+    endtime = time(8, 40)
     duration = datetime.combine(date(2021, 11, 2), endtime) - datetime.combine(date(2021, 11, 1), starttime)
     #totaltime = timedelta()
     x_start = 690 # 14:00
@@ -68,5 +68,4 @@ class Aurora:
 
 if __name__=="__main__":
     aurora = Aurora(sys.argv[1])
-
 
